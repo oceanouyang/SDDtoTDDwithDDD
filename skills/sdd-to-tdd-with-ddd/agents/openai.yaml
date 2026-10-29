@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDDtoTDDwithDDD"
+  short_description: "Connect specifications, domain models, and tested delivery"
+  default_prompt: "Use $sdd-to-tdd-with-ddd to coordinate this task from its existing requirements and domain rules through verified delivery."
