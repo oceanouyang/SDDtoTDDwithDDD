@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0 — 2026-10-30
+
+- Add first-use environment inspection, official-source discovery, scoped authorized setup, layered readiness checks, and return to the original task.
+- Add opt-in personalization with required-skill detection, official-source installation offers and authorization, then explicit project/conversation scope and read access before layered actual-use analysis; keep private evidence and personal candidates separate.
+- Clarify novice handovers and the difference between an embedded installer and an agent performing authorized setup.
+- Extend the deliberate publication set with the two portable reference branches; preserve the skill identifier and independent upstream installations.
+- Exercise authorized and declined-helper flows in a stateful synthetic zero-installed-skill host, with explicit real-versus-simulated evidence boundaries.
+
+These are instruction/documentation changes. Package/example checks and bounded simulations do not establish live installation, account-wide history access, universal model compliance, or full upstream compatibility.
+
 ## 0.1.0 — 2026-10-30
 
 - Initial public, host-neutral coordination skill for SDD, TDD, DDD, and BDD.

@@ -6,7 +6,7 @@
 
 SDDtoTDDwithDDD coordinates **Specification-Driven Development (SDD)**, **Test-Driven Development (TDD)**, **Domain-Driven Design (DDD)**, and **Behavior-Driven Development (BDD)**. It provides a practical handoff protocol for OpenSpec, Superpowers, and domain-modeling workflows.
 
-It is an instruction-based coordination layer. It does not install dependencies, modify upstream skills, or provide a runtime that automatically invokes other skills.
+It is an instruction-based coordination layer, without a bundled dependency installer or automatic invocation runtime. An agent with the necessary tools and existing authorization can use its [first-use setup branch](skills/sdd-to-tdd-with-ddd/references/bootstrap.md) to inspect the environment, find official sources, install or repair missing components, verify readiness, and resume the task. It does not modify upstream skills.
 
 ## What it coordinates
 
@@ -30,9 +30,9 @@ This is an incremental loop. Small fixes do not require a complete new modeling 
 
 ## Install and use
 
-1. Obtain this repository and locate `skills/sdd-to-tdd-with-ddd/`.
+1. Download a versioned portable skill ZIP from [GitHub Releases](https://github.com/oceanouyang/SDDtoTDDwithDDD/releases), or obtain this repository and locate `skills/sdd-to-tdd-with-ddd/`. Release tags preserve earlier versions; the portable ZIP contains the skill folder plus license/attribution notices, not the entire repository.
 2. Install **that folder** using your agent host's supported skill installer, skill directory, or managed configuration. Preserve any existing same-named installation until you have compared it.
-3. Enable OpenSpec, Superpowers, and your chosen domain-modeling capability through their own supported setup procedures when you want the full integration. See [compatibility](docs/compatibility.md).
+3. Enable only the components the current task needs. For a fresh host or missing capabilities, follow the [setup branch](skills/sdd-to-tdd-with-ddd/references/bootstrap.md); it links the official OpenSpec and Superpowers repositories and uses their current host-specific procedures. See [compatibility](docs/compatibility.md).
 4. Ask your agent to use the skill. In hosts supporting dollar-prefixed invocation:
 
 ```text
@@ -44,6 +44,12 @@ then implement and verify the smallest useful increments.
 If the host cannot discover installed skills, explicitly ask it to read `skills/sdd-to-tdd-with-ddd/SKILL.md`. That provides instructions; it does not prove automatic discovery or component invocation works.
 
 The repository/display name is **SDDtoTDDwithDDD**. The portable skill identifier is **sdd-to-tdd-with-ddd**. `agents/openai.yaml` supplies optional UI metadata; hosts that do not support it can use the Markdown instructions.
+
+## First use and optional personalization
+
+For a new Codex user, the [setup branch](skills/sdd-to-tdd-with-ddd/references/bootstrap.md) separates installation, host discovery/loading, interface readiness, and a real task handoff. It reuses existing setup authorization and asks only when a necessary action exceeds it. Missing tools, network access, or a required user action remain explicit gaps; a short handover says what is ready, what needs attention, and which original step comes next.
+
+Users who explicitly want a workflow adapted to their own usage can choose the [personal-edition branch](skills/sdd-to-tdd-with-ddd/references/personalization.md). It first checks the skills required for the requested tailoring. If a necessary skill is missing, the agent shows its verified official GitHub source, asks about installation where authorization is missing, installs within authorization, and verifies readiness. It then asks which projects/conversations to include, obtains the corresponding read-only access, and derives scoped changes from that selected material. Private evidence stays outside the public package; skill installation does not grant account-wide access, and ordinary development does not require these personalization prerequisites.
 
 ## Common starting points
 

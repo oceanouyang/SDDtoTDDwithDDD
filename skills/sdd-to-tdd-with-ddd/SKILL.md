@@ -9,11 +9,12 @@ Turn a user goal into shared domain meaning, an observable behavioral contract, 
 
 ## Establish the current task
 
-1. Read applicable project instructions, existing approved decisions, and the affected code, tests, specifications, and active change. Establish scope, current phase, intended behavior, and observable completion evidence. Resume valid work rather than restarting discovery.
-2. Identify the available OpenSpec interface, Superpowers skills, and domain-modeling capability through the host's actual discovery/configuration mechanism. A downloaded repository is not an enabled skill. Explain missing capabilities and continue independent authorized work.
-3. Read [handoffs.md](references/handoffs.md) to resolve artifact ownership and task identity. Use [modes.md](references/modes.md) to select explanation, guided learning, delivery, or read-only boundaries from the request and existing agreements.
+1. Read applicable project instructions, existing approved decisions, and the affected code, tests, specifications, and active change. Establish scope, current phase, intended behavior, and observable completion evidence. Use [modes.md](references/modes.md) to resolve participation and stopping boundaries before setup or mutation. Resume valid work rather than restarting discovery.
+2. Identify the available OpenSpec interface, Superpowers skills, and domain-modeling capability through the host's actual discovery/configuration mechanism. For first use, a necessary missing/undiscovered component, or uncertain setup, follow [bootstrap.md](references/bootstrap.md): inspect, find and present official sources, match existing authorization, install or repair where authorized, verify readiness, and resume the original task. Require only the capabilities this task needs.
+3. Read [handoffs.md](references/handoffs.md) to resolve artifact ownership and task identity.
 4. Read the relevant branch of [workflows.md](references/workflows.md). For implementation, review, or completion, also read [verification.md](references/verification.md).
 5. When artifacts, instructions, behavior, evidence, or status disagree, read [conflicts.md](references/conflicts.md) and only the applicable cases it routes to.
+6. Only when the user actively requests a personal edition or usage-informed tuning, follow [personalization.md](references/personalization.md). First identify and resolve required skills through official sources and installation authorization; then confirm the projects/conversations to include and obtain their access consent before reading. Derive conditional changes from the selected actual-use evidence, author a separate candidate, and validate before authorized deployment. Ordinary development does not trigger history collection.
 
 Keep explanation, design-only work, and read-only diagnosis within their requested scope. In guided learning, respect the agreed participant and stopping point. In delivery, small verified increments are an execution method, not a reason to ask for permission after every ordinary step.
 

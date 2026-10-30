@@ -33,11 +33,13 @@ PUBLIC_FILES = frozenset({
     'scripts/validate.py',
     'skills/sdd-to-tdd-with-ddd/SKILL.md',
     'skills/sdd-to-tdd-with-ddd/agents/openai.yaml',
+    'skills/sdd-to-tdd-with-ddd/references/bootstrap.md',
     'skills/sdd-to-tdd-with-ddd/references/conflicts-execution.md',
     'skills/sdd-to-tdd-with-ddd/references/conflicts-requirements.md',
     'skills/sdd-to-tdd-with-ddd/references/conflicts.md',
     'skills/sdd-to-tdd-with-ddd/references/handoffs.md',
     'skills/sdd-to-tdd-with-ddd/references/modes.md',
+    'skills/sdd-to-tdd-with-ddd/references/personalization.md',
     'skills/sdd-to-tdd-with-ddd/references/verification.md',
     'skills/sdd-to-tdd-with-ddd/references/workflows.md',
 })

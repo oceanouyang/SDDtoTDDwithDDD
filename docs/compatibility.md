@@ -2,7 +2,7 @@
 
 ## Supported contract
 
-The skill is Markdown instructions with optional UI metadata. It requires a host that can read instructions, inspect project artifacts, and perform the authorized development work. It has no background runtime, package installer, dependency resolver, or automatic hook into another skill.
+The skill is Markdown instructions with optional UI metadata. It requires a host that can read instructions, inspect project artifacts, and perform the authorized development work. It has no background runtime, bundled package installer, dependency resolver, or automatic hook into another skill. The [setup branch](../skills/sdd-to-tdd-with-ddd/references/bootstrap.md) guides an agent through actual environment checks and authorized setup using the host's tools and current official upstream procedures; it is not an independently executing installer.
 
 For the full OpenSpec/Superpowers/domain-modeling path:
 
@@ -23,6 +23,10 @@ Use the host's supported skill folder and installation/management process. Insta
 Some hosts accept `$sdd-to-tdd-with-ddd`; others require explicit instructions or a different invocation. The README's dollar-prefixed example applies only when the host supports it. `agents/openai.yaml` is optional UI metadata and does not provide tool access or install upstream workflows.
 
 Language, local/global scope, delegation, approvals, scheduling, credentials, and publication come from the actual user/project/host. This repository does not prescribe a machine-specific manager or edit managed system/plugin files.
+
+## Optional personal editions
+
+The [personalization branch](../skills/sdd-to-tdd-with-ddd/references/personalization.md) is opt-in. Identify required authoring skills first; a missing required skill is offered from a verified official source for authorized installation, not silently skipped. After readiness, confirm the included projects/conversations and their read-only access before collecting bodies. History access is limited by the actual host/tools and user consent; installing this coordinator or a skill-authoring helper does not grant account-wide access. Keep a personal source/candidate and private evidence separate from the shared public edition. Validate the applicable skill format and real usage independently of any authoring helper's presence.
 
 ## Known adaptation points
 
