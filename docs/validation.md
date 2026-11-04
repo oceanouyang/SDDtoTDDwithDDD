@@ -63,6 +63,23 @@ Before the 0.2.0 release, two fresh evaluator contexts executed this local skill
 
 This is a two-run synthetic exercise, not a compliance-rate benchmark, a fresh real Codex installation, native permission-dialog validation, account-history integration, or a real OpenSpec/Superpowers project handoff. The synthetic catalogue-refresh permission model does not establish what every real host requires. Raw test artifacts and private evidence are not part of the public skill package.
 
+## Project initialization readiness (0.2.2)
+
+The readiness correction addresses an observed usage gap: loading the coordinator or finding the CLI did not explicitly require checking project initialization. Before editing, an independent evaluator using the previous instructions selected sensible actions in six synthetic cases; that sample did not reproduce a model failure and is not reported as a failing RED test. The change makes the required project-state check and its completion evidence explicit.
+
+A fresh evaluator exercised the same six cases against the updated public instructions:
+
+| Case | Observed simulated decision |
+| --- | --- |
+| Existing code, full workflow, usable CLI, authorized local setup | Confirm uninitialized state, inspect effects, initialize, query the same root, then establish the change |
+| Same project under read-only diagnosis | Inspect and report without initializing or implementing |
+| No local planning folder but a resolved linked store and active change | Reuse that store and resume pending work without local reinitialization |
+| Missing CLI and project-only authorization | Resolve an authorized supported route or report the blocked prerequisite; no assumed global install |
+| Initialization exits zero but project query fails | Diagnose unresolved context and keep readiness pending; no blind retry |
+| Minimal README typo | Use the lightweight branch and explicitly report OpenSpec non-use |
+
+Separately, a real disposable existing-code project was queried, initialized, and queried again using the already available OpenSpec **1.15.0** CLI. The initial query failed because setup was absent; initialization succeeded; the subsequent query returned an empty changes collection successfully. Six Codex skill files were generated under the fixture's project skill directory, and the original source hash stayed unchanged. No upstream package was installed or upgraded. This demonstrates the tested initialization/query sequence, not automatic Codex host discovery, an OpenSpec 1.16.0 compatibility test, a Superpowers handoff, or universal model compliance. Package checks, all six example tests, and first-party format validation also passed.
+
 ## Improving the workflow
 
 Report an actual or synthetic, explicitly labeled failing case with the input, relevant artifacts, component/host versions, observed decision, and expected behavior. Resolve one demonstrated coordination issue at a time. Distinguish author walkthroughs from independent evaluations.

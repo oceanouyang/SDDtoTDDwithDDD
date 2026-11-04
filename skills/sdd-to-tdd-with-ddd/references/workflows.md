@@ -2,6 +2,8 @@
 
 Use the relevant branch, the [handoff contract](handoffs.md), and the participation boundaries in [modes.md](modes.md). Return only the affected work to an earlier stage when new evidence changes a decision.
 
+For every branch, apply [OpenSpec project readiness](handoffs.md#openspec-project-readiness) before OpenSpec-dependent work; a lightweight branch records its non-use instead of initializing unnecessarily.
+
 ## New project
 
 1. Establish users, concrete tasks, platform, first deliverable, and success criteria. Preserve explicit constraints and technology choices.

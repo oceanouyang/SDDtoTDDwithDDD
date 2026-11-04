@@ -8,6 +8,16 @@ Establish the repository/workspace root, change identifier, intended scope, effe
 
 Resolve OpenSpec's actual change path, schema, planning root, and store, where supported, from the current interface and project configuration. Inspect version/help only as needed. A shell command, chat command, skill name, and generated instruction are different interfaces.
 
+## OpenSpec project readiness
+
+Apply this check to both new and existing projects before entering the OpenSpec specification/change workflow. Keep the result in the existing handoff: selected project/planning root and store, initialization state, supporting query/output, and next step.
+
+1. Confirm the intended project root and participation mode. Inspect existing OpenSpec configuration and any explicit linked store; an installed CLI or loaded coordinator does not establish project initialization. A missing local `openspec/` directory does not establish missing setup when an independent store owns the planning artifacts.
+2. When the task requires the full workflow, check that the selected CLI/interface is usable and use its current help, configuration, and supported read-only query to resolve that project or store. Record the result as ready, uninitialized, unavailable, or unresolved. Distinguish an empty initialized project from an unresolved root or an absent change; do not require a change before initialization can be verified.
+3. If the project is confirmed uninitialized, read the current official initialization instructions and `init --help`, then initialize at the authorized location for the actual host. Reuse matching authorization. Before execution, inspect generated-file cleanup or home/global effects and obtain only any missing scope. Preserve existing source, specifications, custom instructions, and unrelated changes. For missing components or uncertain setup, follow [bootstrap.md](bootstrap.md); diagnose an unresolved context before retrying initialization.
+4. Verify initialization from the actual result: check the generated configuration/artifact locations and run a supported query against the same intended project/store. Exit zero or files present alone is insufficient. An empty changes/specs collection can be a valid initialized state. Only then create or resume the authorized change and carry its resolved identity into specifications, plan, implementation, verification, and archive.
+5. If initialization or readiness is blocked, report the precise gap, continue only independent authorized work, and keep the full OpenSpec workflow pending. In a lightweight branch that does not need OpenSpec, state that the OpenSpec specification workflow was not used for this task. Explanation, read-only diagnosis, design-only work, and guided learning retain their original write/participant/stopping boundaries.
+
 ## Ownership by artifact
 
 | Artifact | Question answered | Update trigger |

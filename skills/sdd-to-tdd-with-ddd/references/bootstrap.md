@@ -17,6 +17,8 @@ Inspect the host (including app versus CLI), platform, effective instructions, c
 
 Reuse healthy installations and current project conventions. A read-only explanation can proceed with disclosed gaps. Install only when setup belongs to the authorized task; otherwise report the gap and continue independent work.
 
+Component availability and project initialization are separate checks. Before the task's OpenSpec workflow, apply [OpenSpec project readiness](handoffs.md#openspec-project-readiness), including projects that already have code but no OpenSpec setup. Resolve an existing linked store before creating local planning artifacts, and verify authorized initialization before creating a change.
+
 ## 2. Find and present the official sources
 
 When a required component is missing or incompatible, search GitHub and verify the current official project identity against these starting points:

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2 — 2026-11-05
+
+- Require an explicit project-readiness check before OpenSpec-dependent work in both new and existing projects; component availability does not establish project initialization.
+- Resolve the selected project or linked store, initialize within applicable authorization when needed, and verify generated locations plus a supported project query before creating or resuming a change.
+- Preserve linked-store ownership, existing work, and participation boundaries; report blocked setup and explicit OpenSpec non-use in lightweight tasks.
+- Validate the changed decisions through six bounded synthetic cases and an actual isolated initialization/query run with the existing OpenSpec 1.15.0 CLI. These checks do not establish live Codex discovery or full upstream workflow compatibility.
+
 ## 0.2.0 — 2026-10-30
 
 - Add first-use environment inspection, official-source discovery, scoped authorized setup, layered readiness checks, and return to the original task.

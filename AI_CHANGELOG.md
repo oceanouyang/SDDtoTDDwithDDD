@@ -138,3 +138,29 @@ Finalize the existing public 0.2.0 source and its evidence record. Publish ordin
 The stateful synthetic test retained the same 11-file public skill snapshot; two model-driven flows ended at their expected authorization/refusal boundaries. Actual public lookups are distinguished from simulated installation, permissions, and history. Before this publication the remote had no tags or Releases. The final 27-file package/example checks, first-party format validation, and diff checks are rerun on the release tree before commit. Archive contents and per-file SHA-256 are checked against their exact commits before upload; final remote results are verified from the versioned release records and local publication evidence. No credentials or raw/private test artifacts enter the repository or assets.
 
 ---
+
+## [2026-11-05T03:24:47+08:00] - CODEX
+
+### 修改文件
+- `skills/sdd-to-tdd-with-ddd/SKILL.md` - Route task setup through project readiness.
+- `skills/sdd-to-tdd-with-ddd/references/handoffs.md` - Define initialization state, scoped setup, query verification and failure handling.
+- `skills/sdd-to-tdd-with-ddd/references/workflows.md` - Reach the shared preflight from every relevant branch.
+- `skills/sdd-to-tdd-with-ddd/references/bootstrap.md` - Separate component availability from project initialization.
+- `CHANGELOG.md` - Record the user-requested public 0.2.2 release.
+- `docs/validation.md` - Report baseline, six forward cases, native CLI evidence and limits.
+- `AI_CHANGELOG.md` - Record this maintenance and authorized publication scope.
+
+### 修改类型
+- [x] Bug 修复
+- [x] 文档更新
+
+### 修改原因
+The user reported a missing project-initialization preflight and requested fixes in both editions plus a versioned public 0.2.2 release.
+
+### 影响范围
+Public instructions only. Reuse linked stores and existing authorization; verify initialization before dependent work; preserve lightweight/read-only boundaries. No private authoring or evaluator artifacts enter the publication set. Publication uses a new immutable version tag and Release; prior releases remain unchanged.
+
+### 验证
+The previous-instruction evaluator selected safe actions in six synthetic cases; no model failure is fabricated. A fresh evaluator selected expected bounded decisions in all six updated public cases. The unmodified existing OpenSpec 1.15.0 CLI rejected an uninitialized fixture query, initialized it, generated six project skills, and then resolved an empty change set while preserving source bytes. Package checks (27 files, 52 links), six example tests and first-party format validation passed; final release-tree checks and asset verification follow. Native host discovery, OpenSpec 1.16.0 and the complete Superpowers handoff remain unverified.
+
+---
